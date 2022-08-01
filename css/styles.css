@@ -113,7 +113,7 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-link:hover,
 .menu-link:focus{
@@ -126,6 +126,7 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-p-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-head-link:hover,
 .contacts-head-link:focus{
@@ -182,6 +183,7 @@ padding-top:10px ;
 padding-bottom:10px ;
 padding-left: 32px;
 padding-right: 32px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-container{
     display: block;
@@ -264,6 +266,9 @@ padding-top: 6px;
 padding-right: 22px;
 padding-left: 22px;
 padding-bottom: 6px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-buttons:hover,
 .projects-buttons:focus{
@@ -287,6 +292,15 @@ margin-top: 4px;
 }
 .current{
     color: var(--accent-hover-color);
+}
+.current::after{
+    display: block;
+    content: '';
+    height: 4px;
+    background-color: var(--accent-hover-color);
+    border-radius: 4px;
+    margin-top: 28px;
+    margin-bottom: -30px;
 }
 .current-btn{
     background-color: var(--accent-hover-color);
@@ -343,7 +357,10 @@ border-top: none;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .social-list-link:hover,
 .social-list-link:focus{
@@ -372,6 +389,8 @@ border-top: none;
     height: 92px;
     border: 1px solid var(--color-icons);
     border-radius: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list{
     display: flex;
@@ -425,6 +444,8 @@ border-top: none;
     height: 44px;
     border-radius: 50%;
 background: rgba(255, 255, 255, 0.1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list-link:hover,
@@ -441,4 +462,48 @@ background: rgba(255, 255, 255, 0.1);
 }
 .projects-item{
     cursor: pointer;
+}
+.projects-item:hover .overlay,
+.projects-item:focus .overlay{
+    transform: translate(0, 0);
+}
+.overlay{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        background-color: rgba(33, 150, 243, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 60px 24px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transform: translate(0, 100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-overlay{
+      position: relative;
+      overflow: hidden;
+}
+.work-overlay{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: rgba(47, 48, 58, 0.8);
+        text-align: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+}
+.work-item{
+    position: relative;
 }

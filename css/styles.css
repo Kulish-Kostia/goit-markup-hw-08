@@ -266,9 +266,7 @@ padding-top: 6px;
 padding-right: 22px;
 padding-left: 22px;
 padding-bottom: 6px;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-buttons:hover,
 .projects-buttons:focus{
@@ -358,9 +356,7 @@ border-top: none;
     height: 44px;
     border-radius: 50%;
     background-color: #FFFFFF; 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 .social-list-link:hover,
 .social-list-link:focus{
@@ -387,10 +383,13 @@ border-top: none;
     align-items: center;
     width: 170px;
     height: 92px;
-    border: 1px solid var(--color-icons);
+    border: 1px solid;
+    border-color: var(--color-icons);
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-list-icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list{
     display: flex;
@@ -444,8 +443,7 @@ border-top: none;
     height: 44px;
     border-radius: 50%;
 background: rgba(255, 255, 255, 0.1);
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-list-link:hover,
@@ -551,8 +549,7 @@ transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-close-btn:hover,.modal-close-btn:focus{
    border-color: var(--accent-hover-color);
    fill: var(--accent-hover-color);
-   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 

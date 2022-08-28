@@ -2,21 +2,21 @@
     display: flex;
     align-items: center;
 }
-.menu__list{
+.navi__menu-list{
     display: flex;
     align-items: center;
 }
-.menu__item:not(:last-child){
+.navi__menu-item:not(:last-child){
     margin-right: 50px;
 }
 .contacts-head__item:not(:last-child){
     margin-right: 50px;
 }
-.contacts-head__list{
+.contacts-head{
     display: flex;
     align-items: center;
 }
-.menu__link{
+.navi__menu-link{
     color: #212121 ;
     font-style: normal;
     padding: 30px 0;

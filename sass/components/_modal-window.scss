@@ -14,16 +14,30 @@
     visibility: hidden;
     pointer-events: none;
 }
-.modal{
-    padding: 40px;
+.modal {
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: #FFFFFF;
+    top: 50%;
+    width: calc(100% - 30px);
+    padding: 40px;
     border-radius: 4px;
-    width: 528px;
+    background-color: #FFFFFF;
+  
+    transform: scale(1) translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transform: translate(-100% -100%);
+  
+    @media screen and(min-width:480px) {
+      width: 440px;
+      height: 609px;
     }
+    @media screen and(min-width:768px) {
+    }
+    @media screen and(min-width:1200px) {
+      width: 528px;
+      height: 581px;
+    }
+  }
 .modal-close-btn{
     position: absolute;
     top: 8px;
@@ -135,8 +149,8 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71px;    
+    // font-size: 14px;
+    // line-height: 1.71;    
     letter-spacing: 0.03em;
     color: var(--secondary-p-color);
      &::before{
@@ -157,11 +171,40 @@
          border-color: var(--accent-hover-color);
          }
     }
+    @media screen and(min-width:480px) {
+        font-size: 12px;
+        line-height: 1.16;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media screen and(min-width:768px) {
+        font-size: 12px;
+        line-height: 1.16;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media screen and(min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 }
 .vector-icon{
     position: absolute;
-    left: 23px;
     fill: #FFFFFF;
+    @media screen and(min-width:480px) {
+        left: 11px;
+      }
+      @media screen and(min-width:768px) {
+        left: 11px;
+      }
+      @media screen and(min-width:1200px) {
+       left: 20px;
+      }
 }
 .modal-form-check-cont{
     position: relative;
@@ -188,4 +231,6 @@
       background-color: #188CE8;
      }
 }
+  
+  
 

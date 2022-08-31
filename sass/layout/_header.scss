@@ -1,22 +1,51 @@
-.navi{
-    display: flex;
-    align-items: center;
+@media screen and (max-width: 767px) {
+    .navi__menu-list{
+        display: none;
+    }
+    .contacts-head{
+        display: none;
+    }
+    .mobile-menu-open{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        line-height: 0;
+        fill: #212121;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+           &:hover,
+           &:focus{
+             fill: var(--accent-hover-color);
+           }    
+    }
+    .page-header{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .page-header-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
-.navi__menu-list{
-    display: flex;
-    align-items: center;
-}
-.navi__menu-item:not(:last-child){
-    margin-right: 50px;
-}
-.contacts-head__item:not(:last-child){
-    margin-right: 50px;
-}
-.contacts-head{
-    display: flex;
-    align-items: center;
-}
-.navi__menu-link{
+
+
+@media screen and (min-width: 768px) {
+    .mobile-menu-open{
+        display: none;
+    }
+    .navi{
+        display: flex;
+        align-items: center;
+    }
+    .navi__menu-list{
+        display: flex;
+        align-items: center;
+        margin-left: 88px;
+    }
+    .navi__menu-item:not(:last-child){
+            margin-right: 50px;
+        }
+    .navi__menu-link{
     color: #212121 ;
     font-style: normal;
     padding: 30px 0;
@@ -29,36 +58,8 @@
       &:focus{
         color: var(--accent-hover-color);
      }
-}
-
-.contacts-head__link{
-    padding: 30px 0;
-    display: block;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-p-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus{
-       color: var(--accent-hover-color);
-     }
-}
-
-.header-border{
-    border-bottom: 1px solid #ECECEC;
-    max-width: 1600px;
-    margin: 0 auto;
-}
-.contacts-head__icon{
-    fill: currentColor;
-    margin-right: 10px;
-       &:focus,
-       &:hover{
-       fill: currentColor;
-     }
-}
-.current{
+   }
+   .current{
     color: var(--accent-hover-color);
       &::after{
       display: block;
@@ -70,4 +71,50 @@
       margin-bottom: -30px;
       }
     }
+    .contacts-head{
+        margin-left: auto;
+    }
+    .contacts-head__link{
+            display: block;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+            color: var(--secondary-p-color);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              &:hover,
+              &:focus{
+               color: var(--accent-hover-color);
+             }
+    }
+    .contacts-head__icon{
+        fill: currentColor;
+        margin-right: 10px;
+           &:focus,
+           &:hover{
+           fill: currentColor;
+         }
+    }
+    .header-border{
+        border-bottom: 1px solid #ECECEC;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}  
+
+@media screen and (min-width: 1200px){
+    .contacts-head__item:not(:last-child){
+        margin-right: 50px;
+    }
+    .contacts-head{
+    display: flex;
+    align-items: center;
+    }
+    .contacts-head__link{
+        padding: 30px 0;
+        font-size: 14px;
+        line-height: 1.14;
+
+    }
+}
     

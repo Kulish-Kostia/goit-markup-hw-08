@@ -37,6 +37,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open"data-menu-open>
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#menub"></use>
+          </svg>
+        </button>
         <ul class="list contacts-head">
           <li class="contacts-head__item">
             <a class="link contacts-head__link" href="mailto:info@devstudio.com">
@@ -53,6 +58,66 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu"data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn"data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__menu">
+            <li class="mobile-menu__menu-item">
+              <a href="./index.html" class=" link mobile-menu__menu-link">
+                Студія
+              </a>
+            </li>
+            <li class="mobile-menu__menu-item">
+              <a href="./portfolio.html" class="current-mob-menu link mobile-menu__menu-link">
+                Портфоліо
+              </a>
+            </li>
+            <li class="mobile-menu__menu-item">
+              <a href="" class="link mobile-menu__menu-link">
+                Контакти
+              </a>
+            </li>
+          </ul>
+          <div class="menu-contacts-social-container">
+            <ul class="list mobile-menu__contacts">
+            <li class="mobile-menu__contacts-item">
+              <a class="link mobile-menu__contacts-link" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+              <li class="mobile-menu__contacts-item">
+                <a class="link mobile-menu__contacts-link e-mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a>
+              </li>
+           </ul>
+            <ul class="list mobile-menu__social">
+             <li class="mobile-menu__social-item">
+               <a href="" class="link mobile-menu__social-link">
+                Instagram
+               </a>
+             </li>
+             <li class="mobile-menu__social-item">
+              <a href="" class="link mobile-menu__social-link">
+                Twitter
+              </a>
+             </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="link mobile-menu__social-link">
+                Facebook
+              </a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="link mobile-menu__social-link">
+                LinkedIn
+              </a>
+            </li>
+           </ul>
+          </div>         
+        </div>
       </div>
     </header>
     <main>
@@ -79,31 +144,58 @@
           <ul class="list projects-list">
             <li class="projects-item">
               <div class="projects-overlay">
-                <img
-                  src="./images/technokrack.jpg"
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\technokryak-370\technokryak-370.jpg 1x, ./images\desktop\portfolio-card-set\technokryak-370\technokryak-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\technokryak-354\technokryak-354.jpg 1x, ./images\tablet\portfolio-card-set\technokryak-354\technokryak-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images/mobile/portfolio-card-set/technokryak-450/technokryak-450.jpg 1x, ./images\mobile\portfolio-card-set\technocryak-450\technocryak-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+
+                  />
+                   <img
+                  src="./images/desktop/portfolio-card-set/technokryak-370/technokryak-370.jpg"
                   alt="Suite on laptop"
-                  width="370"
-                  height="290"
+                  class="projects-img"
                 />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
                   особу.
                 </p>
               </div>
-              <div class="projects-text">
+              <div class="projects-text project-text">
                 <h2 class="projects-name">Технокряк</h2>
                 <p class="projects-program">Веб-сайт</p>
               </div>
             </li>
             <li class="projects-item">
               <div class="projects-overlay">
-                <img
-                  src="./images/poster-basketball.jpg"
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\poster-new-orlean-370\poster-new-orlean-370.jpg 1x, ./images\desktop\portfolio-card-set\poster-new-orlean-370\poster-new-orlean-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\poster-new-orlean-354\poster-new-orlean-354.jpg 1x, ./images\tablet\portfolio-card-set\poster-new-orlean-354\poster-new-orlean-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images\mobile\portfolio-card-set\poster-new-orlean-450\poster-new-orlean-450.jpg 1x, ./images\mobile\portfolio-card-set\poster-new-orlean-450\poster-new-orlean-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+                  />
+                  <img
+                  src="./images\desktop\portfolio-card-set\poster-new-orlean-370\poster-new-orlean-370.jpg"
                   alt="Poster Basketball"
-                  width="370"
-                  height="290"
-                />
+                  class="projects-img"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -111,18 +203,31 @@
                 </p>
               </div>
               <div class="projects-text">
-                <h2 class="projects-name">Постер New Orlean vs Golden Star</h2>
+                <h2 class="projects-name project-name-tablet">Постер New Orlean vs Golden Star</h2>
                 <p class="projects-program">Дизайн</p>
               </div>
             </li>
             <li class="projects-item">
               <div class="projects-overlay">
-                <img
-                  src="./images/restaurant-seafood.jpg"
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\seafood-370\seafood-370.jpg 1x, ./images\desktop\portfolio-card-set\seafood-370\seafood-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\seafood-354\seafood-354.jpg 1x, ./images\tablet\portfolio-card-set\seafood-354\seafood-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images\mobile\portfolio-card-set\seafood-450\seafood-450.jpg 1x, ./images\mobile\portfolio-card-set\seafood-450\seafood-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+                  />
+                   <img
+                  src="./images\desktop\portfolio-card-set\seafood-370\seafood-370.jpg"
                   alt="Restaurant Seafood app"
-                  width="370"
-                  height="290"
-                />
+                  class="projects-img"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -136,7 +241,25 @@
             </li>
             <li class="projects-item">
               <div class="projects-overlay">
-                <img src="./images/headphones.jpg" alt="Headphones" width="370" height="290" />
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\prime-370\prime-370.jpg 1x, ./images\desktop\portfolio-card-set\prime-370\prime-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\prime-354\prime-354.jpg 1x, ./images\tablet\portfolio-card-set\prime-354\prime-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images\mobile\portfolio-card-set\prime-450\prime-450.jpg 1x, ./images\mobile\portfolio-card-set\prime-450\prime-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+                  />
+                   <img
+                  src="./images\desktop\portfolio-card-set\prime-370\prime-370.jpg"
+                  alt="Headphones"
+                  class="projects-img"
+                />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -150,12 +273,25 @@
             </li>
             <li class="projects-item">
               <div class="projects-overlay">
-                <img
-                  src="./images/project-boxes.jpg"
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\boxes-370\boxes-370.jpg 1x, ./images\desktop\portfolio-card-set\boxes-370\boxes-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\boxes-354\boxes-354.jpg 1x, ./images\tablet\portfolio-card-set\boxes-354\boxes-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images\mobile\portfolio-card-set\boxes-450\boxes-450.jpg 1x, ./images\mobile\portfolio-card-set\boxes-450\boxes-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+                  />
+                   <img
+                  src="./images\desktop\portfolio-card-set\boxes-370\boxes-370.jpg"
                   alt="Project Boxes app"
-                  width="370"
-                  height="290"
-                />
+                  class="projects-img"
+                  />
+                </picture>  
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -169,12 +305,25 @@
             </li>
             <li class="projects-item">
               <div class="projects-overlay">
-                <img
-                  src="./images/inspiration-has-no-borders.jpg"
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\inspiration-370\inspiration-370.jpg 1x, ./images\desktop\portfolio-card-set\inspiration-370\inspiration-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\inspiration-354\inspiration-354.jpg 1x, ./images\tablet\portfolio-card-set\inspiration-354\inspiration-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images\mobile\portfolio-card-set\inspiration-450\inspiration-450.jpg 1x, ./images\mobile\portfolio-card-set\inspiration-450\inspiration-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+                  />
+                   <img
+                  src="./images\desktop\portfolio-card-set\inspiration-370\inspiration-370.jpg"
                   alt="Suite on computer"
-                  width="370"
-                  height="290"
-                />
+                  class="projects-img"
+                  />
+                </picture> 
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -188,12 +337,25 @@
             </li>
             <li class="projects-item">
               <div class="projects-overlay">
-                <img
-                  src="./images/limited-edition.jpg"
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\limited-edition-370\limited-edition-370.jpg 1x, ./images\desktop\portfolio-card-set\limited-edition-370\limited-edition-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\limited-edition-354\limited-edition-354.jpg 1x, ./images\tablet\portfolio-card-set\limited-edition-354\limited-edition-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images\mobile\portfolio-card-set\limited-edition-450\limited-edition-450.jpg 1x, ./images\mobile\portfolio-card-set\limited-edition-450\limited-edition-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+                  />
+                   <img
+                  src="./images\desktop\portfolio-card-set\limited-edition-370\limited-edition-370.jpg"
                   alt="Design magazine"
-                  width="370"
-                  height="290"
-                />
+                  class="projects-img"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -207,7 +369,25 @@
             </li>
             <li class="projects-item">
               <div class="projects-overlay">
-                <img src="./images/project-lab.jpg" alt="Project-Lab" width="370" height="290" />
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\lab-370\lab-370.jpg 1x, ./images\desktop\portfolio-card-set\lab-370\lab-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\lab-354\lab-354.jpg 1x, ./images\tablet\portfolio-card-set\lab-354\lab-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images\mobile\portfolio-card-set\lab-450\lab-450.jpg 1x, ./images\mobile\portfolio-card-set\lab-450\lab-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+                  />
+                   <img
+                  src="./images\desktop\portfolio-card-set\lab-370\lab-370.jpg"
+                  alt="Project-Lab"
+                  class="projects-img"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -221,12 +401,25 @@
             </li>
             <li class="projects-item">
               <div class="projects-overlay">
-                <img
-                  src="./images/growing-business.jpg"
+                <picture>
+                  <source
+                  srcset="./images\desktop\portfolio-card-set\growing-business-370\growing-business-370.jpg 1x, ./images\desktop\portfolio-card-set\growing-business-370\growing-business-370@2x.jpg 2x" 
+                  media="(min-width:1200px)"
+                  />
+                  <source
+                  srcset="./images\tablet\portfolio-card-set\growing-business-354\growing-business-354.jpg 1x, ./images\tablet\portfolio-card-set\growing-business-354\growing-business-354@2x.jpg 2x" 
+                  media="(min-width:768px)"
+                  />
+                  <source
+                  srcset="./images\mobile\portfolio-card-set\growing-business-450\growing-business-450.jpg 1x, ./images\mobile\portfolio-card-set\growing-business-450\growing-business-450@2x.jpg 2x" 
+                  media="(min-width:320px)"
+                  />
+                   <img
+                  src="./images\desktop\portfolio-card-set\growing-business-370\growing-business-370.jpg"
                   alt="Business app on laptop"
-                  width="370"
-                  height="290"
-                />
+                  class="projects-img"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -321,5 +514,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
